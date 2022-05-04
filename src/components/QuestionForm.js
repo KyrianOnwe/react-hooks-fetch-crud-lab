@@ -17,9 +17,20 @@ function QuestionForm(props) {
     });
   }
 
+  const updateQuestions = (formData) => props.handleSetQuestions(formData)
+
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(formData);
+    fetch("http://localhost:4000/questions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      } ,
+      body: JSON.stringify(formData)
+    }
+    )
+      .then((res) => res.json())
+      .then(() => updateQuestions(formData))
   }
 
   return (
