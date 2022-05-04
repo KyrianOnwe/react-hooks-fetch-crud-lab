@@ -3,10 +3,11 @@ import React, { useState } from "react";
 function QuestionForm(props) {
   const [formData, setFormData] = useState({
     prompt: "",
-    answer1: "",
-    answer2: "",
-    answer3: "",
-    answer4: "",
+    answers: [
+       "",
+       "",
+       "",
+       ""],
     correctIndex: 0,
   });
 

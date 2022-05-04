@@ -36,14 +36,14 @@ function App() {
   }
 
   function handleUpdate(id){
-    fetch(`http://localhost:4000/questions/${id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      } ,
-    })
-      .then((resp) => resp.json())
-      .then((data) => setQuestions(questions.find((q) => q.id)))
+    // fetch(`http://localhost:4000/questions/${id}`, {
+    //   method: "PATCH",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   } ,
+    // })
+      // .then((resp) => resp.json())
+      // .then((data) => setQuestions(questions.find((q) => q.id)))
 
   }
 

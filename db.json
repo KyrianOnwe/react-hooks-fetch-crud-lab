@@ -1,17 +1,6 @@
 {
   "questions": [
     {
-      "id": 3,
-      "prompt": "Which event handler will run when a user is finished filling out a form?",
-      "answers": [
-        "onSubmit",
-        "onClick",
-        "onChange",
-        "onForm"
-      ],
-      "correctIndex": 0
-    },
-    {
       "id": 4,
       "prompt": "______ is a tool that transpiles JSX into valid JavaScript.",
       "answers": [
@@ -43,15 +32,6 @@
         "controlled"
       ],
       "correctIndex": 1
-    },
-    {
-      "prompt": "What is 1 + 2",
-      "answer1": "5",
-      "answer2": "2",
-      "answer3": "3",
-      "answer4": "9",
-      "correctIndex": "2",
-      "id": 7
     }
   ]
 }
